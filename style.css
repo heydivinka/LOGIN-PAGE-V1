@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* IMPORT */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    background-image:url(https://images.pexels.com/photos/29008331/pexels-photo-29008331/free-photo-of-abstract-3d-curved-shapes-in-blue-gradient.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+h1,h2,h3,p, label {
+    color: white;
+}
+
+button {
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #92aaff98;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+button:hover {
+    background-color: #7145a029;
+    transition-duration: 300ms inherit;
+}
+
+/* Modal Styles */
+.modal {
+    box-sizing: border-box;
+    display: none;
+    /*Hiddenbydefault*/position: fixed;
+    /*Stayinplace*/z-index: 1;
+    /*Sitontop*/left: 5px;
+    top: 0;
+    width: 100%;
+    /*Fullwidth*/height: 100%;
+    /*Fullheight*/overflow: auto;
+    /*Enablescrollifneeded*/background-color: rgb(0,0,0);
+    /*Fallbackcolor*/background-color: rgba(0,0,0,0.4);
+    /*Blackw/opacity*/border-radius: 9px;
+    -webkit-border-radius:9px;
+    -moz-border-radius:9px;
+    -ms-border-radius:9px;
+    -o-border-radius:9px;
+}
+
+.modal-content {
+    box-shadow: 0 2px 20px rgb(0, 0, 0);
+    border-radius: 9px;
+    height: 420px;
+    box-sizing: border-box;
+    background-color: #ffffff00;
+    margin: 15% auto;
+    /*15%fromthetopandcentered*/padding: 20px;
+    backdrop-filter: blur(20px);
+    border: 0px solid #ffffff;
+    width: 300px;
+    /*Couldbemoreorless,dependingonscreensize*/
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+.modal-content h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9em;
+    font-weight: 800;
+    color: '';
+}
+
+.input-group label {
+    display: flex;
+    position: relative;
+    margin: 0;
+    top: 9px;
+    left: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.input-group input {
+    border: 0px;
+    background-color: none;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.356);
+    width: 220px;
+    height: 35px;
+    display: flex;
+    position: relative;
+    margin: 19px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.message {
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.open-modal {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 300px;
+    position: fixed;
+    width: 300px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
